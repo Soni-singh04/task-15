@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Array Programs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      padding: 20px;
+    }
+
+    .result-box {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+    }
+
+    h3 {
+      color: #007acc;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="result-box">
+    <script>
+		// program 2: concatetenate two arrays.
+		document.write("<h3>1. Write a program to sort a JavaScript Array.</h3>");
+        let numbers = [5, 3, 8, 1, 4];
+        document.write("Original array: " + numbers + "<br>");
+        numbers.sort(function(a, b) {
+            return a - b;
+        });
+        document.write("Sorted array: " + numbers + "<br>");
+		 </script>
+  </div>
+
+  <div class="result-box">
+    <script>
+
+      // Program 2: Concatenate two arrays
+      document.write("<h3>2. Write a program to concatenate two array elements and store them in new array.</h3>");
+      let array1 = [51, 52, 73];
+      let array2 = [64, 75, 96];
+      let concatenatedArray = array1.concat(array2);
+      document.write("<p>Array 1: [" + array1.join(", ") + "]</p>");
+      document.write("<p>Array 2: [" + array2.join(", ") + "]</p>");
+      document.write("<p>Concatenated array: [" + concatenatedArray.join(", ") + "]</p>");
+    </script>
+  </div>
+
+  <div class="result-box">
+    <script>
+      // Program 3: Remove first element from array
+      document.write("<h3>3. Write a program to remove first element from JavaScript Array.</h3>");
+      let fruits = [" Watermelon" , "Apple","Muskmelon", "Banana", "Cherry","Litchi","Mango"];
+      document.write("<p>Original array: [" + fruits.join(", ") + "]</p>");
+      fruits.shift();
+      document.write("<p>Array after removing first element: [" + fruits.join(", ") + "]</p>");
+    </script>
+  </div>
+
+</body>
+
+</html>
